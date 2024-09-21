@@ -1,0 +1,66 @@
+@import './styles/var.css';
+@import './styles/reset.css';
+
+h1 {
+	margin-bottom: 60px;
+	font-weight: 700;
+	letter-spacing: 0px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+a {
+	width: 100%;
+	max-width: 500px;
+	padding: 28px 24px;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+	text-decoration: none;
+	background-color: var(--dark);
+	box-shadow: var(--shadow);
+}
+
+label {
+	min-width: 107px;
+	height: 40px;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+span {
+	display: block;
+	line-height: 2;
+	font-size: 16px;
+}
+
+label,
+span {
+	color: var(--light);
+}
+
+@media only screen and (max-width: 768px) {
+	h1 {
+		font-size: 28px;
+	}
+
+	a {
+		padding: 16px;
+	}
+
+	span {
+		font-size: 14px;
+	}
+
+	label {
+		min-width: 107px;
+		height: 40px;
+		font-size: 16px;
+	}
+}
