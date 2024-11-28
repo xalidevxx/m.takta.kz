@@ -15,8 +15,7 @@ body {
 }
 
 body {
-	padding: 16px;
-	background: linear-gradient(90deg, #e0f7fa, #fff8dc);
+	background: #f2f2f3;
 	position: relative;
 	overflow-y: overlay;
 	overflow-x: hidden;
