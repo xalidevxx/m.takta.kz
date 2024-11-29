@@ -1,5 +1,6 @@
 @import './styles/var.css';
 @import './styles/reset.css';
+
 #appStoreButton,
 #playMarketButton,
 #websiteButton {
@@ -10,60 +11,70 @@
 	width: 48px;
 }
 
-.content {
-	position: relative;
-	background: linear-gradient(90deg, #e0f7fa, #fff8dc);
+main {
+	width: 100%;
 	max-width: 600px;
 	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
 	padding-top: 40px;
+	position: relative;
+	background: linear-gradient(90deg, #e0f7fa, #fff8dc);
 }
 
-img {
+.demo {
 	width: 100%;
+	height: 100%;
 	object-fit: contain;
 }
 
-.description {
-	background-color: #fff;
+section {
+	padding: 32px 16px 16px;
 	position: absolute;
 	bottom: 0;
-	left: 0;
 	right: 0;
-	text-align: center;
+	left: 0;
+	z-index: 2;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	text-align: center;
 	gap: 16px;
-	padding: 16px;
-	box-shadow: 0px -8px 8px 0px rgba(34, 60, 80, 0.2);
+	background: var(--light);
+	box-shadow: 0px -16px 16px -8px rgba(34, 60, 80, 0.4);
+	border-top: 1px solid grey;
 	border-radius: 12px 12px 0 0;
 }
 
-.description-text {
-	font-size: 22px;
+h1 {
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: -1px;
+	line-height: 1.5;
 }
 
-h1 {
-	margin-top: 16px;
-	font-weight: 700;
+h2 {
+	font-size: 22px;
+	font-weight: 500;
 	letter-spacing: 0;
 	line-height: 1.5;
-	text-align: center;
 }
 
 a {
-	width: 100%;
-	padding: 28px 24px;
-	border-radius: 12px;
+	width: 80%;
+	padding: 16px 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 16px;
 	text-decoration: none;
 	background-color: var(--dark);
+	border-radius: 16px;
 	box-shadow: var(--shadow);
+}
+
+a > img {
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
 }
 
 label {
@@ -89,39 +100,28 @@ span {
 }
 
 @media only screen and (max-width: 768px) {
+	main {
+		padding-top: 16px;
+	}
+
+	section {
+		padding-top: 16px;
+	}
+
 	h1 {
 		font-size: 28px;
-		margin-bottom: 0;
 	}
 
-	a {
-		padding: 16px;
-	}
-
-	#appStoreButton > img {
-		width: 32px;
-	}
-
-	span {
-		font-size: 12px;
+	h2 {
+		font-size: 18px;
 	}
 
 	label {
 		height: 40px;
-		font-size: 12px;
-	}
-
-	.description-text {
 		font-size: 16px;
 	}
-}
 
-@media (max-width: 600px) {
-	h1 {
-		margin-top: 0;
-	}
-
-	.content{
-		padding: 16px;
+	span {
+		font-size: 12px;
 	}
 }
