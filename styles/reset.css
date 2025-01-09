@@ -15,20 +15,12 @@ body {
 }
 
 body {
-	background: #f2f2f3;
-	position: relative;
-	overflow-y: overlay;
-	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 64px;
-}
-
-body::-webkit-scrollbar {
-	display: none;
-	width: 0px;
+	background: linear-gradient(30deg, #6ea4ff, #0022ff);
 }
 
 @media only screen and (max-width: 768px) {

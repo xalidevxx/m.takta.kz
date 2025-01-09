@@ -1,34 +1,29 @@
 @import './styles/var.css';
 @import './styles/reset.css';
 
-#appStoreButton,
-#playMarketButton,
-#websiteButton {
-	display: none;
-}
-
-#appStoreButton > img {
-	width: 48px;
-}
-
 main {
 	width: 100%;
-	max-width: 600px;
 	height: 100%;
-	padding-top: 40px;
 	position: relative;
-	background: linear-gradient(90deg, #e0f7fa, #fff8dc);
 }
 
 .demo {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
+	display: none;
+}
+
+#androidImg {
+	padding-right: 2px;
+	padding-left: 4px;
 }
 
 section {
+	max-width: 600px;
 	padding: 32px 16px 16px;
 	position: absolute;
+	margin: 0 auto;
 	bottom: 0;
 	right: 0;
 	left: 0;
@@ -61,7 +56,7 @@ h2 {
 a {
 	width: 80%;
 	padding: 16px 0;
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	gap: 16px;
@@ -75,6 +70,10 @@ a > img {
 	width: 40px;
 	height: 40px;
 	object-fit: contain;
+}
+
+#appStoreButton > img {
+	width: 48px;
 }
 
 label {
@@ -100,10 +99,7 @@ span {
 }
 
 @media only screen and (max-width: 768px) {
-	main {
-		padding-top: 16px;
-	}
-
+	main,
 	section {
 		padding-top: 16px;
 	}
