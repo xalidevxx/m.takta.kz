@@ -1,3 +1,13 @@
-@import './styles/var.css';
-@import './styles/reset.css';
-@import './styles/components.css';
+@media only screen and (max-width: 768px) {
+	h1 {
+		font-size: 28px;
+	}
+	h2 {
+		font-size: 18px;
+	}
+	a {
+		height: 40px;
+		font-size: 16px;
+		border-radius: 6px;
+	}
+}

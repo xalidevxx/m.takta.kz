@@ -1,0 +1,25 @@
+{
+	"name": "m.takta.kz",
+	"version": "1.0.0",
+	"description": "Маркетинговая страница Takta.kz",
+	"author": "Alikhan <xalidevxx@gmail.com>",
+	"homepage": "https://m.takta.kz",
+	"license": "ISC",
+	"type": "commonjs",
+	"main": "script.js",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/xalidevxx/m.takta.kz.git"
+	},
+	"bugs": {
+		"url": "https://github.com/xalidevxx/m.takta.kz/issues"
+	},
+	"dependencies": {
+		"vite": "^7.0.0"
+	}
+}

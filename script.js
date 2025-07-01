@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		appBtn.href =
 			'https://play.google.com/store/apps/details?id=kz.takta.takta';
 	} else {
-		window.location.href = 'https://takta.kz';
+		// window.location.href = 'https://takta.kz';
 	}
 });
