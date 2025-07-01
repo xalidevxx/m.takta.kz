@@ -4,7 +4,7 @@ main {
 	height: 100%;
 	margin-inline: auto;
 	position: relative;
-	border: var(--border);
+	border-inline: var(--border);
 }
 
 img {
