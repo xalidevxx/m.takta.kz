@@ -2,9 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
-	color: var(--dark);
-	scroll-behavior: smooth;
+	font-family: 'Geist', sans-serif;
 }
 
 html,
@@ -15,16 +13,6 @@ body {
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 64px;
-	background: linear-gradient(30deg, #6ea4ff, #0022ff);
-}
-
-@media only screen and (max-width: 768px) {
-	body {
-		gap: 24px;
-	}
+	background-color: var(--background);
+	color: var(--foreground);
 }

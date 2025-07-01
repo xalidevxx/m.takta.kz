@@ -1,22 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-	const appStoreButton = document.getElementById('appStoreButton');
-	const androidButton = document.getElementById('androidButton');
-	const webButton = document.getElementById('webButton');
-
-	const iosImg = document.getElementById('iosImg');
-	const androidImg = document.getElementById('androidImg');
-	const webImg = document.getElementById('webImg');
-
-	if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-		appStoreButton.style.display = 'flex';
-		iosImg.style.display = 'block';
-	} else if (/android/i.test(userAgent)) {
-		androidButton.style.display = 'flex';
-		androidImg.style.display = 'block';
+	const isIos = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+	const isAndroid = /android/i.test(userAgent);
+	const appBtn = document.getElementById('app-btn');
+	if (isIos) {
+		appBtn.href = 'https://apps.apple.com/kz/app/takta-kz/id6504254858';
+	} else if (isAndroid) {
+		appBtn.href =
+			'https://play.google.com/store/apps/details?id=kz.takta.takta';
 	} else {
-		webButton.style.display = 'flex';
-		webImg.style.display = 'block';
+		window.location.href = 'https://takta.kz';
 	}
 });
