@@ -163,7 +163,7 @@
 				gap: 24px;
 				background: var(--background);
 				border-top: var(--border);
-				border-radius: 16px 16px 0 0;
+				border-radius: 28px 28px 0 0;
 			}
 			.wrapper {
 				width: 100%;
@@ -193,7 +193,6 @@
 				font-size: 16px;
 				font-weight: 500;
 			}
-
 			.elevated-button {
 				background-color: var(--primary);
 				color: var(--primary-foreground);
@@ -201,6 +200,17 @@
 			.secondary-button {
 				background-color: var(--secondary);
 				color: var(--secondary-foreground);
+			}
+			@media (max-width: 560px) {
+				section {
+					padding-inline: 16px;
+				}
+				h1 {
+					font-size: 20px;
+				}
+				h2 {
+					font-size: 16px;
+				}
 			}
 		</style>
 		<link rel="canonical" href="https://takta.kz/" />
@@ -251,7 +261,9 @@
 				<div class="wrapper" style="gap: 14px">
 					<h1>Takta.kz — работа и объявления</h1>
 					<h2>
-						Искать, публиковать и договариваться<br />ещё никогда не было так просто
+						Искать, публиковать и договариваться
+						<br />
+						ещё никогда не было так просто
 					</h2>
 				</div>
 				<div class="wrapper" style="gap: 8px">
